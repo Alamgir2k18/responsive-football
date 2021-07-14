@@ -1,0 +1,262 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common style */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero stayle start  */
+.hero{
+    background-color: #2D25A0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.left-hero{
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+.left-hero h1{
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+
+}
+.left-hero a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 5px 15px;
+
+}
+.right-arrow{
+    padding-left: 8px;
+}
+.right-hero{
+    margin-top: 100px;
+    margin-left: 40px;
+}
+.right-hero img{
+    width: 500px;
+    height: 400px;
+    transition: transform .6s ease-in-out;
+}
+.right-hero img:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* Hero stayle end  */
+
+/* stytle for main content start */
+.all-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    justify-items: center;
+}
+.player{
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player p{
+    font-weight: 300;
+}
+.player img{
+    width: 100%;
+    transition: filter .5s ease-in-out;
+}
+.player img:hover{
+    filter: grayscale(1) opacity(.8);
+}
+
+/* style for main content end */
+
+/* style for footer */
+
+/* .top-footer-2 start */
+.top-footer-2{
+    text-align: center;
+}
+.top-footer-2 h2{
+    font-size: 60px;
+    font-weight: bold;
+    color: #30336b;
+}
+.partners{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.partner{
+    margin: 30px;
+}
+/* .top-footer-2 end */
+
+/* main footer start */
+.main-footer{
+    text-align: center;
+    margin-top: 50px;
+    min-height: 250px;
+}
+.logo img{
+    height: 100px;
+    width: auto;
+}
+.social{
+    width: 25px;
+    height: 25px;
+    background-color: #E7E7E8;
+    border-radius: 50%;
+    padding: 5px;
+    align-items: center;
+    font-size: 25px;
+    color: #969BAB;
+    text-align: center;
+}
+
+/* main footer end */
+
+/* style for footer end */
+
+
+
+
+
+/* media queries  */
+
+/* resposive for mobile devise */
+
+
+@media only screen and (max-width:668px) {
+    /* header section responsive start */
+    .hero{
+        background-color: #2D25A0;
+        grid-template-columns: repeat(1, 1fr);
+        min-height: auto;
+        justify-items: center;
+        padding-bottom: 30px;
+        padding-right: 15px;
+        padding-left: 15px;
+        overflow-x: hidden;
+    
+    }
+    .left-hero{
+        margin-top: 0px;
+        margin-left: 0px;
+    
+    }
+    .left-hero h1{
+        color: white;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+    
+    }
+    .right-arrow{
+        padding-left: 8px;
+    }
+    .right-hero img{
+        margin-top: 20px;
+        margin-left: 0px;
+        height: 100%;
+        width: 100%;
+    
+    }
+    /* header section responsive end */
+    /* main content responsive start */
+    .all-players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-items: center;
+    }
+    /* main content responsive end */
+
+    /* footer responsive start */
+    .partners{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .top-footer-2 h2{
+        font-size: 25px;
+    }
+    .logo img{
+        width: 300px;
+        overflow-x: hidden;
+    }
+    /* footer responsive end */
+  }
+
+
+  /* tablet devises */
+
+@media only screen and (min-width:669px) and (max-width:992px){
+        /* header section responsive start */
+    .hero{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        padding-bottom: 30px;
+        padding-right: 15px;
+        padding-left: 0px;
+        min-height: auto;
+    }
+    .left-hero{
+        margin-top: 100px;
+        margin-left: 0px;
+    
+    }
+    .left-hero h1{
+        color: white;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+    
+    }
+    .right-arrow{
+        padding-left: 8px;
+    }
+    .right-hero img{
+        margin-top: 60px;
+        margin-left: 0px;
+        height: 350px;
+        width: 400px;
+    
+    }
+
+/* header section responsive end */
+
+/* main content responsive start */
+
+    .all-players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        justify-items: center;
+    }
+    /* main content responsive end */
+    /* footer section responsive start */
+    .partners{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .top-footer-2 h2{
+        font-size: 45px;
+    }
+    /* footer section responsive end */
+}
